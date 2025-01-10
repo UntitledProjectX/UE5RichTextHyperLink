@@ -1,0 +1,7 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\HyperLinkPlugin\\Module.HyperLinkPlugin.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\HyperLinkPlugin\\HyperLinkPlugin.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\HyperLinkPlugin\\HyperLinkPluginBPLibrary.cpp.obj"
+	]
+}
