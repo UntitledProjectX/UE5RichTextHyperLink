@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
+	"VersionName": "1.1",
 	"FriendlyName": "HyperLinkPlugin",
 	"Description": "Adds HyperLink functionality to default Rich Text Block.",
 	"Category": "UI",
@@ -10,7 +10,7 @@
 	"DocsURL": "https://github.com/UntitledProjectX/UE5RichTextHyperLink",
 	"MarketplaceURL": "",
 	"SupportURL": "https://buymeacoffee.com/untitledprojectx",
-	"EngineVersion": "5.5.0",
+	"EngineVersion": "5.6.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [

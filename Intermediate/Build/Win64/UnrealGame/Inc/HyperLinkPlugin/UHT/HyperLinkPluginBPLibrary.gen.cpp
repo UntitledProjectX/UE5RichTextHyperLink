@@ -5,26 +5,28 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "HyperLinkPlugin/Public/HyperLinkPluginBPLibrary.h"
-#include "Runtime/SlateCore/Public/Styling/SlateTypes.h"
+#include "HyperLinkPluginBPLibrary.h"
+#include "Styling/SlateTypes.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeHyperLinkPluginBPLibrary() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 HYPERLINKPLUGIN_API UClass* Z_Construct_UClass_UHyperLinkPluginBPLibrary();
 HYPERLINKPLUGIN_API UClass* Z_Construct_UClass_UHyperLinkPluginBPLibrary_NoRegister();
 SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FHyperlinkStyle();
 UMG_API UClass* Z_Construct_UClass_URichTextBlockDecorator();
 UPackage* Z_Construct_UPackage__Script_HyperLinkPlugin();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UHyperLinkPluginBPLibrary Function ClickFun
+// ********** Begin Class UHyperLinkPluginBPLibrary Function ClickFun ******************************
 struct HyperLinkPluginBPLibrary_eventClickFun_Parms
 {
 	FString LinkID;
 	FString Content;
 };
-static const FName NAME_UHyperLinkPluginBPLibrary_ClickFun = FName(TEXT("ClickFun"));
+static FName NAME_UHyperLinkPluginBPLibrary_ClickFun = FName(TEXT("ClickFun"));
 void UHyperLinkPluginBPLibrary::ClickFun(const FString& LinkID, const FString& Content)
 {
 	UFunction* Func = FindFunctionChecked(NAME_UHyperLinkPluginBPLibrary_ClickFun);
@@ -66,7 +68,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UHyper
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::NewProp_Content,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UHyperLinkPluginBPLibrary, nullptr, "ClickFun", nullptr, nullptr, Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::PropPointers), sizeof(HyperLinkPluginBPLibrary_eventClickFun_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UHyperLinkPluginBPLibrary, nullptr, "ClickFun", Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::PropPointers), sizeof(HyperLinkPluginBPLibrary_eventClickFun_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(HyperLinkPluginBPLibrary_eventClickFun_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun()
 {
@@ -86,9 +88,9 @@ DEFINE_FUNCTION(UHyperLinkPluginBPLibrary::execClickFun)
 	P_THIS->ClickFun_Implementation(Z_Param_LinkID,Z_Param_Content);
 	P_NATIVE_END;
 }
-// End Class UHyperLinkPluginBPLibrary Function ClickFun
+// ********** End Class UHyperLinkPluginBPLibrary Function ClickFun ********************************
 
-// Begin Class UHyperLinkPluginBPLibrary
+// ********** Begin Class UHyperLinkPluginBPLibrary ************************************************
 void UHyperLinkPluginBPLibrary::StaticRegisterNativesUHyperLinkPluginBPLibrary()
 {
 	UClass* Class = UHyperLinkPluginBPLibrary::StaticClass();
@@ -97,10 +99,34 @@ void UHyperLinkPluginBPLibrary::StaticRegisterNativesUHyperLinkPluginBPLibrary()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UHyperLinkPluginBPLibrary);
+FClassRegistrationInfo Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary;
+UClass* UHyperLinkPluginBPLibrary::GetPrivateStaticClass()
+{
+	using TClass = UHyperLinkPluginBPLibrary;
+	if (!Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("HyperLinkPluginBPLibrary"),
+			Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary.InnerSingleton,
+			StaticRegisterNativesUHyperLinkPluginBPLibrary,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UHyperLinkPluginBPLibrary_NoRegister()
 {
-	return UHyperLinkPluginBPLibrary::StaticClass();
+	return UHyperLinkPluginBPLibrary::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics
 {
@@ -122,7 +148,7 @@ struct Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun, "ClickFun" }, // 2250130584
+		{ &Z_Construct_UFunction_UHyperLinkPluginBPLibrary_ClickFun, "ClickFun" }, // 3306807962
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -130,7 +156,7 @@ struct Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics::NewProp_Style = { "Style", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UHyperLinkPluginBPLibrary, Style), Z_Construct_UScriptStruct_FHyperlinkStyle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Style_MetaData), NewProp_Style_MetaData) }; // 3254820155
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics::NewProp_Style = { "Style", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UHyperLinkPluginBPLibrary, Style), Z_Construct_UScriptStruct_FHyperlinkStyle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Style_MetaData), NewProp_Style_MetaData) }; // 2322100232
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHyperLinkPluginBPLibrary_Statics::NewProp_Style,
 };
@@ -163,24 +189,21 @@ UClass* Z_Construct_UClass_UHyperLinkPluginBPLibrary()
 	}
 	return Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary.OuterSingleton;
 }
-template<> HYPERLINKPLUGIN_API UClass* StaticClass<UHyperLinkPluginBPLibrary>()
-{
-	return UHyperLinkPluginBPLibrary::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UHyperLinkPluginBPLibrary);
 UHyperLinkPluginBPLibrary::~UHyperLinkPluginBPLibrary() {}
-// End Class UHyperLinkPluginBPLibrary
+// ********** End Class UHyperLinkPluginBPLibrary **************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Plugins_HyperLinkPlugin_Package_HyperLinkRelease1_0_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h__Script_HyperLinkPlugin_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UHyperLinkPluginBPLibrary, UHyperLinkPluginBPLibrary::StaticClass, TEXT("UHyperLinkPluginBPLibrary"), &Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHyperLinkPluginBPLibrary), 424999436U) },
+		{ Z_Construct_UClass_UHyperLinkPluginBPLibrary, UHyperLinkPluginBPLibrary::StaticClass, TEXT("UHyperLinkPluginBPLibrary"), &Z_Registration_Info_UClass_UHyperLinkPluginBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHyperLinkPluginBPLibrary), 3818039729U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Plugins_HyperLinkPlugin_Package_HyperLinkRelease1_0_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h_2557813906(TEXT("/Script/HyperLinkPlugin"),
-	Z_CompiledInDeferFile_FID_Unreal_Plugins_HyperLinkPlugin_Package_HyperLinkRelease1_0_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Plugins_HyperLinkPlugin_Package_HyperLinkRelease1_0_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h__Script_HyperLinkPlugin_1801920782(TEXT("/Script/HyperLinkPlugin"),
+	Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h__Script_HyperLinkPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_HyperLinkPlugin_HostProject_Plugins_HyperLinkPlugin_Source_HyperLinkPlugin_Public_HyperLinkPluginBPLibrary_h__Script_HyperLinkPlugin_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
